@@ -1,0 +1,13 @@
+[package]
+name = "bootmgr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+efivar = "0.2.1"
+uefi = { version = "0.16.0", features = [ "exts" ] }
+regex = "1.6.0"
+crossterm = "0.25.0"
+nix = { version = "0.25.0", features = [ "reboot" ] }
+anyhow = "1.0.61"
+ez_input = { git = "https://github.com/R-ARM/ez_input.git", branch = "main" }
